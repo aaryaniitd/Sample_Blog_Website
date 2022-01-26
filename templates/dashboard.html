@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+{% block body %}
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('{{url_for('static', filename = 'assets/img/dashboard.jpg' ) }} ')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Admin Panel</h1>
+                            <span class="subheading">Manage your posts and save them.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                <!-- Todo: Fetch it using for loop from the database -->
+                <h3 class="text-center" style = "color:grey; font-family: cursive;"><p> Welcome to Dashboard</p>
+                    <p> You are logged in successfully</p></h3>
+
+                    <table class="table">
+    <thead>
+      <tr>
+        <th>Serial No</th>
+        <th>Title</th>
+        <th>Date</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+
+        {% for post in posts %}
+      <tr>
+        <td>{{post.sno}}</td>
+        <td>{{post.title}}</td>
+        <td>{{post.date}}</td>
+        <td>{{post.date}}</td>
+        <td>{{post.date}}</td>
+      </tr>
+      
+
+      {% endfor %}
+    </tbody>
+  </table>
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                    <!-- Post preview-->
+                    
+                    
+                </div>
+            </div>
+        </div>
+{% endblock %} 

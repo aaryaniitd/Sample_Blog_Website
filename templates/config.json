@@ -1,0 +1,21 @@
+{
+	"params":
+	{
+		"local_server":"True",
+		"local_uri":"mysql://root:@localhost/theexplorer",
+		"prod_uri":"mysql://root:@localhost/theexplorer",
+		"fb_url":"https://facebook.com//theexplorer",
+		"tw_url":"https://twitter.com//theexplorer",
+		"git_url":"https://github.com//theexplorer",
+		"blog":"TheExplorer",
+		"tag":"A Blog for Natural Science Enthusiasts",
+		"no_of_posts": 5,
+		"admin_username": "aaryan",
+		"admin_password":"connect"
+
+
+	}
+
+
+
+}
